@@ -1,0 +1,31 @@
+// Placeholder for future interactivity, like a carousel
+console.log("Page loaded!");
+// JavaScript for Single Image Carousel
+const images = [
+  "F:\web page\clg images 1.jfif",
+  "F:\web page\clg images 2.jfif",
+  "F:\web page\clg images 3.jfif",
+  "F:\web page\clg images 4.jpg",
+  "F:\web page\college-image.avif",
+  "F:\web page\computer lab pic.jpg",
+  "F:\web page\eee lab pic.jpg",
+  "F:\web page\mec lab pic.jpg",
+];
+
+let currentIndex = 1;
+
+function showImage(index) {
+  const imageElement = document.getElementById("currentImage");
+  imageElement.src = images[index];
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % images.length; // Loop to the first image if at the end
+  console.log(currentIndex) 
+ showImage(currentIndex);
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop to the last image if at the beginning
+  showImage(currentIndex);
+}

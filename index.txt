@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo"><img src="E:\web page\clg logo.jpg"></div>
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#courses">Courses</a>
+      <a href="https://govtpolygannavaram.ac.in/admissions">Admissions</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to  GPT Gannavaram</h1>
+    <p align="center">Empowering the next generation through knowledge and technology</p>
+  </section>
+
+  <section class="about" id="about">
+    <div class="content">
+      <div class="text">
+        <h2>About Our College</h2>
+        <p>The viewer is very important, the view will be followed by the viewer. Feugiat will be pursued whole and fair and free.<br><br>VISION To produce Technocrats in the field of Electrical and Electronics Engineering to meet industry requirements by imparting technical skills using modern e-learning facilities and equipment.<br>MISSIONS <br>
+
+M1: To provide quality technical education in the field of Electrical and Electronics Engineering using modern tools.<br>
+M2 :To create competent and skilled Technicians who are well trained to face the challenges in Electrical , Electromechanical and Electronics industries.<br>
+M3: To strive for continuous improvement in the quality of academics and inculcate professional and ethical values among the students.<br></p>
+      </div>
+      <div class="image">
+        <img src="E:\web page\college-image.avif" alt="College image">
+      </div>
+    </div>
+  </section>
+
+  <section class="programs" id="courses">
+    <h2>Our Featured Courses</h2>
+    <div class="grid">
+      <div class="program">
+        <h3>CME</h3>
+        <p>CME (Continuing Medical Education) refers to educational activities designed for medical professionals to maintain, develop, and enhance their knowledge, skills, and performance. It helps ensure they stay updated with the latest medical advancements and provide high-quality patient care.</p>
+      </div>
+      <div class="program">
+        <h3>EEE</h3>
+        <p>EEE (Electrical and Electronics Engineering) is a branch of engineering that focuses on the study and application of electricity, electronics, and electromagnetism. It involves designing, developing, and maintaining electrical systems, electronic devices, and power generation technologies used in various industries.</p>
+      </div>
+      <div class="program">
+        <h3>MEC</h3>
+        <p>MEC (Mechanical Engineering) is a field of engineering that focuses on designing, analyzing, and manufacturing mechanical systems. It covers areas like machines, robotics, thermodynamics, and energy systems.</p>
+      </div>
+    <div class="program">
+        <h3>ECE</h3>
+        <p>ECE (Electronics and Communication Engineering) is a branch of engineering that focuses on designing and developing electronic devices, communication systems, and related technologies. It combines principles of electronics, signal processing, and telecommunications to create innovative solutions for modern communication and electronics challenges.</p>
+      </div>
+</div>
+  </section>
+<!-- Gallery Section -->
+<section class="gallery bg-light" id="gallery">
+  <div class="container">
+    <h2 class="text-center mb-5">Campus Gallery</h2>
+    <div class="carousel">
+      <button class="prev" onclick="prevImage()">&#10094;</button>
+      <img id="currentImage" src="E:\web page\clg images 1.jfif" alt="Campus Image" class="img-fluid">
+      <button class="next" onclick="nextImage()">&#10095;</button>
+    </div>
+  </div>
+</section>
+
+
+
+  <footer class="footer" id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Address</b>: Pamarthi nagar, NTTF Rd, Gannavaram, Andhra Pradesh 521101</p>
+    <p><b>Email</b>: gpgannavaram@gmail.com</p>
+    <p><b>Phone</b>: 08676253138</p>
+  </footer>
+
+  <script src="F:\web page\script.js"></script>
+</body>
+</html>

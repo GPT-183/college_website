@@ -1,0 +1,206 @@
+/* Basic Reset and Common Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align:center;
+}
+
+/* Header Styling */
+.header {
+  background-color: #1565c0;
+  color: white;
+  padding: 10px 20px;  /* Add padding for spacing */
+  display: flex;       /* Use flexbox for layout */
+  justify-content: space-between;  /* Space between logo and navigation */
+  align-items: center;  /* Vertically center items */
+}
+
+.header .logo img {
+  width: 50%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;           /* Use flexbox for navigation links */
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+/* Main Content for CME Course */
+.cme-course {
+  padding: 30px;
+  flex-grow: 1;
+}
+
+/* Container 1 Styling (Labs, Faculty, Syllabus) */
+.container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+ 
+}
+
+#firstContainer {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+  }
+
+#firstContainer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#firstContainer ul {
+  list-style: none;
+}
+
+#firstContainer ul li {
+  margin: 10px 0;
+}
+
+#firstContainer ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#firstContainer ul li a:hover {
+  color: #0056b3;
+}
+
+/* Image for Lab */
+#firstContainer img {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+/* Second Container Styling (Labs) */
+#secondContainer {
+  width: 55%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10%;
+}
+
+#secondContainer .images img {
+  width: 30%;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.syllabus-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.syllabus-link:hover {
+  text-decoration: underline;
+}
+
+/* Third Container Styling (Faculty) */
+#thirdContainer {
+  width: 55%;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10%;
+}
+
+#thirdContainer .images img {
+  width: 30%;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.syllabus-link {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.syllabus-link:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown button */
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button styling */
+.navbar .dropbtn {
+  background-color: #1565c0;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+/* Change color on hover */
+.navbar .dropbtn:hover {
+  background-color: #555;
+}
+
+/* Dropdown content (hidden by default) */
+.navbar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0000ff;
+  min-width: 160px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.navbar .dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of links on hover */
+.navbar .dropdown-content a:hover {
+  background-color: #555;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: #e3f2fd;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+}
