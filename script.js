@@ -1,8 +1,8 @@
 let currentImageIndex = 0;
 const images = [
-  "D:\\web page\\clg images 1.jfif",  // Update with your actual image paths
-  "D:\\web page\\clg images 2.jfif",
-  "D:\\web page\\clg images 3.jfif"
+  "clg images 1.jfif",  // Update with your actual image paths
+  "clg images 2.jfif",
+  "clg images 3.jfif"
   // Add more images as needed
 ];
 
