@@ -134,14 +134,14 @@ body {
   color: #0056b3;
 }
 
-/* Image beside content */
+/* Image beside content 
 #firstContainer .image {
   width: 100%;
   height: auto;
   margin-top: 20px;
   //margin-left: 20px;
   border-radius: 8px;
-}
+}*/
 
 #firstContainer .image img {
   width: 100%;
