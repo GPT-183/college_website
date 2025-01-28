@@ -126,14 +126,14 @@ a {
 
 /* Change color on hover */
 .navbar .dropbtn:hover {
-  background-color: #555;
+  background-color: blue;
 }
 
 /* Dropdown content (hidden by default) */
 .navbar .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #0000ff;
+  background-color: white;
   min-width: 160px;
   z-index: 1;
 }
