@@ -175,7 +175,7 @@ a {
 }
 
 .carousel img {
-  width: 40%;
+  width: 90%;
   height: 300px; /* Set a fixed height for the images */
   object-fit: cover; /* Ensures images fill the space without distortion */
   transition: opacity 1s ease-in-out, transform 0.3s ease; /* Smooth fade transition and scaling */
