@@ -60,7 +60,6 @@ body {
 
 #firstContainer {
   width: 40%;
-  height: 60%;
   display: inline-block;
   vertical-align: top;
   }
@@ -90,7 +89,7 @@ body {
 /* Image for Lab */
 #firstContainer img {
   width: 100%;
-  height: auto;
+  height: 60%;
   margin-top: 20px;
   border-radius: 8px;
 }
