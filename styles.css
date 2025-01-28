@@ -163,20 +163,20 @@ a {
   padding: 20px;
   background-color: #e3f2fd;
 }
-/* Single Image Carousel */
 /* Carousel Section */
 .carousel {
   position: relative;
-  max-width: 10%;
+  max-width: 100%;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Center the carousel container */
   align-items: center;
+  overflow: hidden; /* Hide any overflow content */
 }
 
 .carousel img {
-  width: 40%;
-  height: 300px; /* Set a fixed height for the images */
+  width: 60%; /* Adjusted width to ensure images are larger */
+  height: 300px; /* Fixed height */
   object-fit: cover; /* Ensures images fill the space without distortion */
   transition: opacity 1s ease-in-out, transform 0.3s ease; /* Smooth fade transition and scaling */
   display: block;
@@ -219,4 +219,5 @@ a {
 .carousel button:hover {
   background-color: rgba(0, 0, 0, 0.8); /* Change background on hover */
 }
+
 
