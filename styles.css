@@ -79,6 +79,7 @@ a {
 .about .image img {
   width: 100%;
   border-radius: 8px;
+  height: 90%;
 }
 
 /* Programs Section */
