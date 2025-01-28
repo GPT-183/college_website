@@ -167,7 +167,7 @@ a {
 /* Carousel Section */
 .carousel {
   position: relative;
-  max-width: 100%;
+  max-width: 10%;
   margin: auto;
   display: flex;
   justify-content: center;
