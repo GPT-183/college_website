@@ -166,7 +166,7 @@ a {
 /* Single Image Carousel */
 /* Carousel Section */
 .carousel {
-  position: relative;
+  position: center;
   max-width: 100%;
   margin: auto;
   display: flex;
