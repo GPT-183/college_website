@@ -204,11 +204,11 @@ a {
 
 /* Add spacing from the image */
 .carousel button.prev {
-  left: -60px; /* Move further left for spacing */
+  left: 30px; /* Move further left for spacing */
 }
 
 .carousel button.next {
-  right: -60px; /* Move further right for spacing */
+  right: 30px; /* Move further right for spacing */
 }
 
 .carousel button:hover {
