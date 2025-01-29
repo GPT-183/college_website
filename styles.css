@@ -202,11 +202,11 @@ a {
 }
 
 .carousel button.prev {
-  left: -60px; /* Adjust position */
+  left: 10px; /* Adjust position */
 }
 
 .carousel button.next {
-  right: -60px; /* Adjust position */
+  right: 10px; /* Adjust position */
 }
 
 .carousel button:hover {
