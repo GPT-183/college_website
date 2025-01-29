@@ -163,33 +163,26 @@ a {
   padding: 20px;
   background-color: #e3f2fd;
 }
-/* Single Image Carousel */
 /* Carousel Section */
 .carousel {
   position: relative;
-  max-width: 100%;
+  max-width: 600px; /* Adjust as needed */
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .carousel img {
-  width: 40%;
-  height: 300px; /* Set a fixed height for the images */
+  width: 100%; /* Make the image take up full width of the container */
+  height: 350px; /* Set a fixed height for uniformity */
   object-fit: cover; /* Ensures images fill the space without distortion */
-  transition: opacity 1s ease-in-out, transform 0.3s ease; /* Smooth fade transition and scaling */
-  display: block;
   border-radius: 15px; /* Apply rounded corners */
+  display: block;
 }
 
-/* Hover effect for the image */
-.carousel img:hover {
-  transform: scale(1.05); /* Slightly zoom the image */
-  opacity: 0.8; /* Slightly reduce opacity for highlight effect */
-}
-
-/* Circular buttons */
+/* Circular navigation buttons */
 .carousel button {
   position: absolute;
   top: 50%;
@@ -200,23 +193,22 @@ a {
   font-size: 30px;
   padding: 10px;
   cursor: pointer;
-  width: 50px; /* Define width of the circle */
-  height: 50px; /* Define height of the circle */
-  border-radius: 50%; /* Makes the button circular */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .carousel button.prev {
-  left: 10px; /* Position the previous button */
+  left: -60px; /* Adjust position */
 }
 
 .carousel button.next {
-  right: 10px; /* Position the next button */
+  right: -60px; /* Adjust position */
 }
 
 .carousel button:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Change background on hover */
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
