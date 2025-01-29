@@ -121,27 +121,27 @@ body {
 
 /* Third Container Styling (Faculty) */
 #thirdContainer {
-  width: 75%;
+  width: 90%; /* Increased width */
   display: inline-block;
   vertical-align: top;
-  margin-left: 10%;
+  margin-left: 5%; /* Adjusted margin for centering */
 }
 
-#thirdContainer .images img {
-  width: 30%;
-  margin-right: 10px;
+.faculty {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Added spacing between faculty members */
+}
+
+.faculty-member {
+  text-align: center;
+  flex: 1;
+}
+
+.faculty-member img {
+  width: 220px; /* Slightly increased image size */
+  height: 270px;
   border-radius: 8px;
-}
-
-.syllabus-link {
-  display: block;
-  margin-top: 20px;
-  text-decoration: none;
-  color: #0056b3;
-}
-
-.syllabus-link:hover {
-  text-decoration: underline;
 }
 
 /* Dropdown button */
