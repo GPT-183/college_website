@@ -25,6 +25,7 @@ a {
   background-color: #1565c0; /* A darker blue for a professional look */
   color: #fff; /* White text for contrast */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  image-width: 140px;
 }
 
 .navbar a {
