@@ -21,7 +21,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   background-color: #1565c0; /* A darker blue for a professional look */
   color: #fff; /* White text for contrast */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -215,7 +215,7 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Header */
+ /* Header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -224,11 +224,11 @@ a {
   background-color: #1565c0; /* A darker blue for a professional look */
   color: #fff; /* White text for contrast */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
+}  
 
 /* Adjust the logo size */
 .header .logo img {
-  width: 140px; /* Adjust the logo width */
+  width: 150px; /* Adjust the logo width */
   height: auto;
 }
 
