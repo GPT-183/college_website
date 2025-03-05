@@ -1,7 +1,7 @@
   var btn=document.getElementById("btn");
     var cn=document.getElementById("username").value;
     btn.addEventListener('click',{}=>
-      document.getElementById("user").innerHTML=cn+"@"cn.length+;                       
+      document.getElementById("user").innerHTML=cn+"@"+cn.length;                       
  );
   
 
