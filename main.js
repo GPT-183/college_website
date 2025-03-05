@@ -1,6 +1,6 @@
-  var btn=document.getElementById("btn");
+  var bt=document.getElementById("bt");
     var cn=document.getElementById("username").value;
-    btn.addEventListener('click',{}=>
+    bt.addEventListener('click',{}=>
       document.getElementById("user").innerHTML=cn+"@"+cn.length;                       
  );
   
