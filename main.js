@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+    var btn=document.getElementById("btn");
+    var cn=document.getElementById("username").value;
+    btn.addEventListener('click',{}=>
+      document.getElementById("user").innerHTML=cn+"@"cn.length+;                       
+ );
+    
     const container = document.querySelector('.container');
     const registerBtn = document.querySelector('.register-btn');
     const loginBtn = document.querySelector('.login-btn');
@@ -14,9 +20,5 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("One or more elements not found. Check your HTML structure.");
     }
-    var btn=document.getElementById("btn");
-    var cn=document.getElementById("username").value;
-    btn.addEventListener('click',{}=>
-      document.getElementById("user").innerHTML=cn+"@"cn.length+;                       
- );
+   
 });
