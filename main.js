@@ -1,9 +1,11 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var btn=document.getElementById("btn");
+  var btn=document.getElementById("btn");
     var cn=document.getElementById("username").value;
     btn.addEventListener('click',{}=>
       document.getElementById("user").innerHTML=cn+"@"cn.length+;                       
  );
+  
+
+document.addEventListener("DOMContentLoaded", function () {
     
     const container = document.querySelector('.container');
     const registerBtn = document.querySelector('.register-btn');
