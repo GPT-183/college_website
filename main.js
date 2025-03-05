@@ -1,8 +1,4 @@
-  var bt=document.getElementById("bt");
-    var cn=document.getElementById("username").value;
-    bt.addEventListener('click',{}=>
-      document.getElementById("user").innerHTML=cn+"@"+cn.length;                       
- );
+ 
   
 
 document.addEventListener("DOMContentLoaded", function () {
