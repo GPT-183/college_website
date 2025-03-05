@@ -14,5 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         console.error("One or more elements not found. Check your HTML structure.");
     }
-    var btn=document.getElementById("");
+    var btn=document.getElementById("btn");
+    var cn=document.getElementById("username").value;
+    btn.addEventListener('click',{}=>
+      document.getElementById("user").innerHTML=cn+"@"cn.length+;                       
+ );
 });
