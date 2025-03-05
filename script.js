@@ -56,3 +56,29 @@ startAutoSlide();
 // Add event listeners to stop/resume the auto-slide on hover
 imageElement.addEventListener('mouseover', stopAutoSlide);
 imageElement.addEventListener('mouseleave', resumeAutoSlide);
+
+//notification code
+function updateMarquee(notification) {
+  const marqueeText = document.getElementById('marquee-text');
+  marqueeText.innerHTML = notification;
+}
+
+// Establish WebSocket connection (replace with your server URL)
+const socket = new WebSocket('ws://your-websocket-server-url');
+
+socket.onopen = function(event) {
+  console.log('WebSocket connection established.');
+};
+
+socket.onmessage = function(event) {
+  const notification = event.data;
+  updateMarquee(notification);
+};
+
+socket.onclose = function(event) {
+  console.log('WebSocket connection closed.');
+};
+
+socket.onerror = function(error) {
+  console.error('WebSocket error:', error);
+};
