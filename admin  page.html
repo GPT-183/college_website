@@ -78,7 +78,7 @@
     <nav class="navbar">
         <a href="#dashboard">Dashboard</a>
         <a href="#manage-users">Manage Users</a>
-        <a href="admin  page.html">Push Notification</a>
+        <a href="admin page.html">Push Notification</a>
         <a href="#settings">Settings</a>
         <a href="index.html">Go to Main Page</a>
     </nav>
@@ -126,32 +126,6 @@
 
         // Example: When an admin sends a notification (replace with your admin logic)
         //sendNotification('New product available!');
-
-
-const WebSocket = require('ws');
-
-const wss = new WebSocket.Server({ port: 8080 }); // Choose a port
-
-wss.on('connection', ws => {
-  console.log('Client connected');
-
-  ws.on('close', () => {
-    console.log('Client disconnected');
-  });
-});
-
-function sendNotification(notification) {
-  wss.clients.forEach(client => {
-    if (client.readyState === WebSocket.OPEN) {
-      client.send(notification);
-    }
-  });
-}
-
-// Example: When an admin sends a notification (replace with your admin logic)
-//sendNotification('New product available!');
-
-
     </script>
 </body>
 </html>
