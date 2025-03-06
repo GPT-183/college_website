@@ -58,11 +58,30 @@ imageElement.addEventListener('mouseover', stopAutoSlide);
 imageElement.addEventListener('mouseleave', resumeAutoSlide);
 
 //notification code
-function updateMarquee(notification) {
+function loadNotifications() {
+            let notifications = JSON.parse(localStorage.getItem('notifications')) || [];
+            let marquee = document.getElementById('notification-marquee');
+
+            if (notifications.length > 0) {
+                marquee.textContent = notifications.join(' • '); // Separate notifications with a dot
+            } else {
+                marquee.textContent = "No new notifications.";
+            }
+        }
+
+      // Update notifications every 2 seconds
+        setInterval(loadNotifications, 2000);
+
+        // Load notifications when the page first loads
+        document.addEventListener('DOMContentLoaded', loadNotifications);
+
+
+
+     function updateMarquee(notification) {
   const marqueeText = document.getElementById('marquee-text');
   marqueeText.innerHTML = notification;
 }
-
+//new notifiy
 // Establish WebSocket connection (replace with your server URL)
 const socket = new WebSocket('ws://your-websocket-server-url');
 
