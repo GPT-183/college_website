@@ -39,6 +39,12 @@ a {
   color: #bbdefb; /* Add a lighter hover effect for the links */
 }
 
+  #notification-marquee {
+  width: 100%;
+  background-color: #ff8722;
+  overflow: hidden;
+  white-space: nowrap; /* Prevent wrapping */
+}
 
 /* Hero Section */
 .hero {
