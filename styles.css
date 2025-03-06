@@ -34,7 +34,7 @@ a {
       overflow: hidden;
       white-space: nowrap;
       width: 100%;
-      background-color: #f0f0f0;
+      background-color:#F5DEB3;
       padding: 10px 0;
     }
 
@@ -43,7 +43,7 @@ a {
       padding-left: 100%;
       font:arial;
       direction: left;
-      animation: marquee 4s linear infinite;
+      animation: marquee 2s linear infinite;
     }
 
     @keyframes marquee {
