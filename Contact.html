@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        /* Header */
+        .header {
+            background: #003366;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            top: 0;
+        }
+
+        .header .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+
+        .navbar a:hover {
+            background: #005bb5;
+            border-radius: 5px;
+        }
+
+        /* Dropdown */
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background: #003366;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .dropdown a:hover {
+            background: #005bb5;
+        }
+
+        /* Outer Section Container */
+        .container-main {
+            width: 65%; /* Reduced width */
+            max-width: 1300px;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 60px 25px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 30px;
+            margin-top: 150px; /* Creates space between the fixed header and the container */
+            margin-bottom: 40px; /* Optional, if you want some space at the bottom */
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Adds space between content elements */
+        }
+
+        /* Heading */
+        .heading-section h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+
+        /* Flex Container for Contact Section */
+        .contact-wrapper {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        /* Location Container */
+        .location-container {
+            width: 45%;
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .location-container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .location-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        /* Contact Information Container */
+        .contact-info-container {
+            width: 45%;
+            background-color: #f3f3f3;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info-container h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .contact-info-container p {
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        .contact-info-container p strong {
+            color: #2c3e50;
+        }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            .contact-wrapper {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .container-main {
+                width: 90%; /* Make the department container wider on small screens */
+            }
+
+            .location-container, .contact-info-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="GPTGNVMLOGO.jpg" alt="College Logo" width="300">&nbsp
+            </div><br>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="#departments">Departments</a>
+                        <div class="dropdown">
+                            <a href="cmebody.html">CME</a>
+                            <a href="eee.html">EEE</a>
+                            <a href="ece.html">ECE</a>
+                            <a href="mech.html">MEC</a>
+                        </div>
+                    </li>
+                    <li><a href="index.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Us Section -->
+    <div class="container-main">
+        <div class="heading-section">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="contact-wrapper">
+            <!-- Location Container -->
+            <div class="location-container">
+                <h2>Our Location</h2>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4028.8411306539615!2d80.81466790000002!3d16.5432508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a36081f5c581547%3A0xa38a5454c860adfe!2sGovt%20Polytechnic%20College!5e1!3m2!1sen!2sin!4v1736287810876!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+            <!-- Contact Information Container -->
+            <div class="contact-info-container">
+                <h2>Contact Information</h2>
+                <p><strong>Address:</strong> Government polytechnic-Gannavaram, Beside NTTF, Buddavaram, Andhra Pradesh,India</p>
+                <p><strong>Email:</strong> gpgannavaram@gmail.com</p>
+                <p><strong>Phone:</strong> 08676253138</p>
+              
+                <p><strong>Working Hours:</strong> Monday - Saturday: 10:00 AM - 4:30 PM</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
