@@ -28,6 +28,27 @@ a {
   image-width: 110px;
 }
 
+
+/* Marquee CSS */
+    #notification-marquee {
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 10px 0;
+    }
+
+    #marquee-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+      from { transform: translateX(100%); }
+      to { transform: translateX(-100%); }
+    }
+
 .navbar a {
   margin: 0 15px;
   color: #fff; /* Keep links white for readability */
