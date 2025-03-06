@@ -63,7 +63,7 @@ function loadNotifications() {
             let marquee = document.getElementById('notification-marquee');
 
             if (notifications.length > 0) {
-                marquee.textContent = notifications.join(' • '); // Separate notifications with a dot
+                marquee.textContent = notifications.join(' •|| '); // Separate notifications with a dot
             } else {
                 marquee.textContent = "No new notifications.";
             }
